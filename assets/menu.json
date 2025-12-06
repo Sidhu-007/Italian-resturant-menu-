@@ -1,0 +1,68 @@
+{
+    "categories": [
+        {
+            "id": "starters",
+            "name": "Starters",
+            "items": [
+                {
+                    "id": "1",
+                    "name": "Bruschetta",
+                    "price": 12.99,
+                    "description": "Toasted bread topped with fresh tomatoes, garlic, basil, and olive oil.",
+                    "image": "https://placehold.co/600x400/png?text=Bruschetta",
+                    "ingredients": [
+                        "Bread",
+                        "Tomato",
+                        "Garlic",
+                        "Basil"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "name": "Calamari",
+                    "price": 15.50,
+                    "description": "Crispy fried squid rings served with marinara sauce and lemon.",
+                    "image": "https://placehold.co/600x400/png?text=Calamari",
+                    "ingredients": [
+                        "Squid",
+                        "Flour",
+                        "Oil",
+                        "Lemon"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mains",
+            "name": "Main Course",
+            "items": [
+                {
+                    "id": "3",
+                    "name": "Grilled Salmon",
+                    "price": 28.00,
+                    "description": "Fresh Atlantic salmon grilled to perfection, served with asparagus.",
+                    "image": "https://placehold.co/600x400/png?text=Salmon",
+                    "ingredients": [
+                        "Salmon",
+                        "Asparagus",
+                        "Butter",
+                        "Herbs"
+                    ]
+                },
+                {
+                    "id": "4",
+                    "name": "Ribeye Steak",
+                    "price": 35.00,
+                    "description": "Succulent 10oz Ribeye steak cooked to your liking with garlic butter.",
+                    "image": "https://placehold.co/600x400/png?text=Steak",
+                    "ingredients": [
+                        "Beef",
+                        "Garlic",
+                        "Butter",
+                        "Rosemary"
+                    ]
+                }
+            ]
+        }
+    ]
+}
