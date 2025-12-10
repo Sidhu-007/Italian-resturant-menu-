@@ -8,11 +8,7 @@ export default function CartScreen() {
     const { items, removeItem, total, clearCart } = useCart();
     const router = useRouter();
 
-    const handleCheckout = () => {
-        alert('Order Placed Successfully! 🤌🇮🇹');
-        clearCart();
-        router.dismiss();
-    };
+
 
     if (items.length === 0) {
         return (
@@ -51,10 +47,13 @@ export default function CartScreen() {
                     <Text className="text-3xl font-bold text-gray-900">${total}</Text>
                 </View>
                 <Pressable
-                    onPress={handleCheckout}
+                    onPress={() => {
+                        router.dismiss();
+                        router.push('/checkout');
+                    }}
                     className="w-full bg-accent py-4 rounded-2xl active:opacity-90 shadow-lg shadow-orange-200"
                 >
-                    <Text className="text-white text-center font-bold text-lg">Place Order</Text>
+                    <Text className="text-white text-center font-bold text-lg">Proceed to Checkout</Text>
                 </Pressable>
             </View>
         </SafeAreaView>

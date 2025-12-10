@@ -14,7 +14,7 @@ echo 1. If asked to log in, enter your Expo username/password.
 echo 2. If asked "Generate a new Android Keystore", choose [Yes]
 echo.
 echo ===================================================
-call npx eas build -p android --profile preview
+call npx -y eas-cli build -p android --profile preview
 echo.
 echo Build process finished.
 pause

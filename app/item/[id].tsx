@@ -77,8 +77,7 @@ export default function ItemDetailScreen() {
                 <View style={{ height: IMG_HEIGHT - 30 }} />
 
                 <View
-                    className="bg-white -mt-10 rounded-t-3xl min-h-screen p-6"
-                    style={{ shadowColor: '#000', shadowOffset: { width: 0, height: -5 }, shadowOpacity: 0.1, shadowRadius: 20, elevation: 5 }}
+                    className="bg-white -mt-10 rounded-t-3xl min-h-screen p-6 shadow-2xl"
                 >
                     <View className="w-12 h-1.5 bg-gray-200 rounded-full self-center mb-6" />
 

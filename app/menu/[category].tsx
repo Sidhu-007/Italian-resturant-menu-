@@ -21,16 +21,7 @@ export default function MenuScreen() {
         <Animated.View entering={FadeInRight.delay(index * 150).springify()}>
             <Link href={`/item/${item.id}`} asChild>
                 <Pressable
-                    className="bg-white p-4 mb-4 rounded-2xl flex-row items-center active:scale-98 transition-transform"
-                    style={({ pressed }) => [
-                        {
-                            shadowColor: '#000',
-                            shadowOffset: { width: 0, height: 1 },
-                            shadowOpacity: 0.05,
-                            shadowRadius: 2,
-                            elevation: 2,
-                        },
-                    ]}
+                    className="bg-white p-4 mb-4 rounded-2xl flex-row items-center active:scale-98 transition-transform shadow-sm"
                 >
                     <Animated.Image
                         // @ts-ignore

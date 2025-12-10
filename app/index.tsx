@@ -12,8 +12,7 @@ export default function HomeScreen() {
         <Animated.View entering={FadeInDown.delay(index * 100).duration(600).springify()}>
             <Link href={`/menu/${item.id}`} asChild>
                 <Pressable
-                    className="mb-6 bg-white rounded-3xl overflow-hidden active:scale-95 transition-transform"
-                    style={{ shadowColor: "#000", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2 }}
+                    className="mb-6 bg-white rounded-3xl overflow-hidden active:scale-95 transition-transform shadow-sm"
                 >
                     <Animated.Image
                         // @ts-ignore
@@ -40,6 +39,10 @@ export default function HomeScreen() {
                         <Text className="text-xl text-accent font-bold">Benvenuti! 👋</Text>
                         <Text className="text-4xl font-extrabold text-primary">Gustoso</Text>
                         <Text className="text-base text-gray-500 font-medium">Italian Fine Dining 🇮🇹</Text>
+                        <Pressable onPress={() => router.push('/about')} className="mt-2 flex-row items-center">
+                            <Text className="text-accent font-bold">About Us</Text>
+                            <Text className="text-xs ml-1 text-accent">➔</Text>
+                        </Pressable>
                     </View>
                     <Pressable
                         onPress={() => router.push('/cart')}
